@@ -1,0 +1,3 @@
+#!/bin/bash
+
+vim -R +':set ft=man|exe !search(".")?"quit!":""' <(man "$@" 2>/dev/null)
