@@ -5,7 +5,7 @@ viman is a simple script that opens man pages in vim for easier navigation.
 
 ### Example
 
-```$ viman man```
+```$ viman man
 
 1   MAN(1)                                                                             Manual pager utils                                                                             MAN(1) 
   1 
@@ -59,7 +59,7 @@ viman is a simple script that opens man pages in vim for easier navigation.
  49 
  50 EXAMPLES
  51        man ls
- 52            Display the manual page for the item (program) ls.
+ 52            Display the manual page for the item (program) ls.```
 
 
 ## cloc-git
@@ -67,7 +67,7 @@ cloc-git displays the line count for each language used in a git repository.
 
 ### Example 
 
-```cloc-git example ```                                                                                                    11:58:19 PM
+```cloc-git example                                                                                                        11:58:19 PM
 Cloning into 'temp-linecount-repo'...
 warning: --depth is ignored in local clones; use file:// instead.
 done.
@@ -109,5 +109,5 @@ Nix                                      1              1              0        
 Bourne Shell                             1              4              0              8
 ---------------------------------------------------------------------------------------
 SUM:                                  9459         106821         311396        1580091
----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------```
 
