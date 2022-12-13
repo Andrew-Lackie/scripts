@@ -59,8 +59,8 @@ viman is a simple script that opens man pages in vim for easier navigation.
  49 
  50 EXAMPLES
  51        man ls
- 52            Display the manual page for the item (program) ls.```
-
+ 52            Display the manual page for the item (program) ls.
+```
 
 ## cloc-git
 cloc-git displays the line count for each language used in a git repository.
