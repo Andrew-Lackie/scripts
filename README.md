@@ -5,8 +5,11 @@ viman is a simple script that opens man pages in vim for easier navigation.
 
 ### Example
 
-```$ viman man
+```sh
+$ viman man
+```
 
+```
 1   MAN(1)                                                                             Manual pager utils                                                                             MAN(1) 
   1 
   2 NAME
@@ -38,28 +41,9 @@ viman is a simple script that opens man pages in vim for easier navigation.
  28        9   Kernel routines [Non standard]
  29 
  30        A manual page consists of several sections.
- 31 
- 32        Conventional  section  names  include NAME, SYNOPSIS, CONFIGURATION, DESCRIPTION, OPTIONS, EXIT STATUS, RETURN VALUE, ERRORS, ENVIRONMENT, FILES, VERSIONS, CONFORMING TO, NOTES,
- 33        BUGS, EXAMPLE, AUTHORS, and SEE ALSO.
- 34 
- 35        The following conventions apply to the SYNOPSIS section and can be used as a guide in other sections.
- 36 
- 37        bold text          type exactly as shown.
- 38        italic text        replace with appropriate argument.
- 39        [-abc]             any or all arguments within [ ] are optional.
- 40        -a|-b              options delimited by | cannot be used together.
- 41        argument ...       argument is repeatable.
- 42        [expression] ...   entire expression within [ ] is repeatable.
- 43 
- 44        Exact rendering may vary depending on the output device.  For instance, man will usually not be able to render italics when running in a terminal, and will typically use  under‐
- 45        lined or coloured text instead.
- 46 
- 47        The  command  or  function illustration is a pattern that should match all possible invocations.  In some cases it is advisable to illustrate several exclusive invocations as is
- 48        shown in the SYNOPSIS section of this manual page.
- 49 
- 50 EXAMPLES
- 51        man ls
- 52            Display the manual page for the item (program) ls.
+                                                          .
+                                                          .
+                                                          .
 ```
 
 ## cloc-git
@@ -67,7 +51,11 @@ cloc-git displays the line count for each language used in a git repository.
 
 ### Example 
 
-```cloc-git example                                                                                                        11:58:19 PM
+```
+cloc-git example  
+```
+```
+11:58:19 PM
 Cloning into 'temp-linecount-repo'...
 warning: --depth is ignored in local clones; use file:// instead.
 done.
