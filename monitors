@@ -1,0 +1,18 @@
+#!/bin/bash
+
+while [ "$1" != "" ]; do
+  case $1 in
+    --single | -s)
+      xrandr --output DP-2 --off --output DP-0 --off
+      ;;
+    --dual | -d)
+      xrandr --auto --output DP-1 --primary --mode 3840x2160 --left-of DP-0
+      xrandr --output DP-2 --off
+      ;;
+    ?)
+      echo "script usage: [--single | -s] [-dual | -d] " >&2
+      exit 1
+      ;;
+  esac
+  shift
+done
