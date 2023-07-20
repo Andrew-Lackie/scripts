@@ -3,11 +3,21 @@
 while [ "$1" != "" ]; do
   case $1 in
     --single | -s)
-      xrandr --output DP-2 --off --output DP-0 --off
+      if (xrandr --output DP-2 --off --output DP-1 --off); then
+        xrandr --output DP-2 --off
+      else
+        xrandr --output DP-2 --auto
+      fi
       ;;
     --dual | -d)
-      xrandr --auto --output DP-1 --primary --mode 3840x2160 --left-of DP-0
-      xrandr --output DP-2 --off
+      if (xrandr --auto --output DP-0 --primary --mode 3840x2160 --left-of DP-1); then
+        xrandr --output DP-2 --off
+      else
+        xrandr --output DP-2 --auto
+      fi
+      ;;
+    --integrated | -i)
+      xrandr --output DP-2 --auto
       ;;
     ?)
       echo "script usage: [--single | -s] [-dual | -d] " >&2
